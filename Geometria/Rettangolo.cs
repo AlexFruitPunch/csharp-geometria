@@ -40,7 +40,40 @@ namespace Geometria
         }
         public void Disegna()
         {
-
+            //disegno base alta del rettangolo
+            for(int i = 0; i < baseRettangolo; i++)
+            {
+                Console.Write("--");
+            }
+            //disegno altezza sinistra e destra insieme
+            for (int i = 0; i < altezzaRettangolo; i++)
+            {
+                if (i == 0)
+                {
+                    Console.Write("\n|");
+                }
+                else
+                {
+                    Console.Write("|");
+                }
+                for (int ind = 0; ind < baseRettangolo; ind++)
+                    {
+                        if (ind < (baseRettangolo - 1))
+                        {
+                            Console.Write("  ");
+                        }
+                        else
+                        {
+                            Console.Write("|\n");
+                        }
+                    }
+                
+            }
+            //disegno l'altra base del Rettangolo
+            for (int i = 0; i < baseRettangolo; i++)
+            {
+                Console.Write("--");
+            }
         }
     }
 }

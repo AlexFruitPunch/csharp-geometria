@@ -22,7 +22,7 @@ Rettangolo mioRettangolo = new Rettangolo(Base, altezza);
 mioRettangolo.StampaRettangolo(numeroRettangoli);
 numeroRettangoli++;
 
-
+mioRettangolo.Disegna();
 //----- rettangolo 2 -----
 
 //Caricamento degli imput da parte dell'utente
@@ -40,6 +40,8 @@ Rettangolo mioRettangolo2 = new Rettangolo(Base, altezza);
 mioRettangolo2.StampaRettangolo(numeroRettangoli);
 numeroRettangoli++;
 
+mioRettangolo2.Disegna();
+
 //----- rettangolo 3 -----
 
 //Caricamento degli imput da parte dell'utente
@@ -55,5 +57,7 @@ Rettangolo mioRettangolo3 = new Rettangolo(Base, altezza);
 //Stampo il contenuto del mio oggetto
 mioRettangolo3.StampaRettangolo(numeroRettangoli);
 numeroRettangoli++;
+
+mioRettangolo3.Disegna();
 
 
