@@ -17,10 +17,30 @@ namespace Geometria
             this.altezzaRettangolo = altezzaRettangolo;
         }
 
-        public void StampaRettangolo()
+        public void StampaRettangolo(int NumRettangoli)
         {
-            Console.WriteLine("La base del mio rettangolo è: " + baseRettangolo);
-            Console.WriteLine("l'altezza del mio rettangolo è: " + altezzaRettangolo);
+            Console.WriteLine("--- Rettangolo " + NumRettangoli + " ----\n");
+            Console.WriteLine("Base: " + baseRettangolo + " cm");
+            Console.WriteLine("Altezza: " + altezzaRettangolo + " cm");
+            Console.WriteLine("Perimetro: " + CalcolaPerimetro() + " cm");
+            Console.WriteLine("Area: " + CalcolaArea() + " cm²");
+        }
+
+        public int CalcolaArea()
+        {
+            int Area;
+            Area = baseRettangolo * altezzaRettangolo;
+            return Area;
+        }
+        public int CalcolaPerimetro()
+        {
+            int Perimetro;
+            Perimetro = (baseRettangolo + altezzaRettangolo) * 2 ;
+            return Perimetro;
+        }
+        public void Disegna()
+        {
+
         }
     }
 }
